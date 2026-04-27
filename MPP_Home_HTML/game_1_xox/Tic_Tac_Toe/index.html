@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =========================== LANDING PAGE ========================= -->
+    <div class="landing" id="landing">
+            <h1>Tic Tac Toe</h1>
+            <input type="text" id="playerName" placeholder="Insert Name Here">
+            <button onclick="startGame()">Start Game</button>
+    </div>
+
+    <!-- =========================== AREA GAME ========================= -->
+    <div class="game hidden" id="game">
+                <h2 id="turnInfo">Your Turn</h2>
+                <div class="board" id="board"></div>
+                <button class="reset" onclick="resetGame()">Restart</button>
+    </div>
+
+    <!-- =========================== POPUP MENANG ========================= -->
+    <div class="popup hidden" id="popup">
+        <div class="popup-box">
+            <h2>The result..</h2>
+            <p id="winnerText"></p>
+            <p id="resultText"></p>
+            <button onclick="closePopup()">OKAY</button>
+        </div>
+    </div>
+
+    <!-- =========================== AUDIO ========================= -->
+    <audio id="bgm" src="audio/bgm.wav" loop></audio>
+    <audio id="clickSound" src="audio/click.wav"></audio>
+    <audio id="winSound" src="audio/win.wav"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
